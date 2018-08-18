@@ -13,9 +13,22 @@ JsonStyle.append({
 });
 ```
 
+
+
+### Google Fonts
+
 Embedding Google Fonts is also supported:
 
 ```javascript
+// Include default font weight only:
 JsonStyle.googlefont("Roboto");
+
+// Select specific weights:
 JsonStyle.googlefont("Montserrat", [200,400]);
+
+// Specific weights and italics:
 JsonStyle.googlefont("Montserrat", [200,300,400,700], true);
+
+// Select specific italics:
+JsonStyle.googlefont("Montserrat", [200, "300i", 400]);
+```

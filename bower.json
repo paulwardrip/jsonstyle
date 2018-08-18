@@ -1,6 +1,6 @@
 {
   "name": "jsonstyle",
-  "description": "allows you to express css in JSON/a Javascript object that you can export as CSS",
+  "description": "allows you to css in your scripts as js objects",
   "main": "jsonstyle.js",
   "authors": [
     "Paul Wardrip <pwardrip@gmail.com>"
@@ -12,5 +12,9 @@
     "embed",
     "styles"
   ],
-  "homepage": ""
+  "ignore": [
+    "test",
+    "package-lock.json",
+    "jsonstyle.js"
+  ]
 }
