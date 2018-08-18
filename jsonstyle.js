@@ -47,4 +47,4 @@ var JsonStyle = function () {
         style: style,
         googlefont: googlefont
     }
-};
+}();
