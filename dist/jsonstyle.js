@@ -4,6 +4,7 @@ var JsonStyle = function () {
     var head;
     if (typeof  window !== 'undefined') {
         head = document.getElementsByTagName("head")[0];
+        head.appendChild(document.createComment("Powered by: JsonStyle"))
     }
 
     function style(o) {
@@ -14,7 +15,7 @@ var JsonStyle = function () {
             var sheet = document.createElement("style");
             sheet.type = "text/css";
             sheet.appendChild(document.createTextNode(styles));
-            sheet.setAttribute("generator", "jsonstyle");
+            sheet.setAttribute("generator", "jsonstyle-style");
             head.appendChild(sheet);
 
         } else {
@@ -23,7 +24,7 @@ var JsonStyle = function () {
     }
 
     function css(__obj) {
-        var csstr = "<!-- jsonstyle: embed CSS in your JS library, in style -->\n\n";
+        var csstr = "";
 
         function classdef(obj) {
             var childqueue;
@@ -73,7 +74,7 @@ var JsonStyle = function () {
             l.type = "text/css";
             l.href = url;
 
-            l.setAttribute("generator", "jsonstyle");
+            l.setAttribute("generator", "jsonstyle-googlefont");
 
             head.appendChild(l);
 
