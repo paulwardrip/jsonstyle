@@ -1,0 +1,17 @@
+{
+  "name": "jsonstyle",
+  "version": "1.0.0",
+  "description": "allows you to express css in JSON/a Javascript object that you can export as CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "json",
+    "embed",
+    "styles"
+  ],
+  "author": "Paul Wardrip <pwardrip@gmail.com>",
+  "license": "ISC"
+}
