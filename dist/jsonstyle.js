@@ -40,7 +40,7 @@ var JsonStyle = function () {
                         }
                     }
 
-                    csstr += idx + " " + JSON.stringify(val, null, 2).replace(/"/g, '').replace(/,/g, ';') + "\n";
+                    csstr += idx + " " + JSON.stringify(val, null, 2).replace(/"/g, '').replace(/,([^ ])/g, ';$1') + "\n";
 
                 }
             }
